@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Crystal Game</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <header id="header">Crystal Collection Game!!</header>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" id="instructions">
+                    In this game you will try to match "Your Number" to the "Target Number".
+                    You will do this by clicking on the Dragon Balls which will add a secret amount of points
+                    to your number. guess carefully and succeed. When you're ready for this most difficult of 
+                    challenges just click the ready button to start.
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <button type="button" id="start">Start</button>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+
+           <hr>
+
+            <div class="row">
+                <div class="col-md-4 info">
+                    <div>
+                        The Target Number Is:
+                    </div>
+                    <div id="tNum">
+                        9000<!---Stuff goes here-->
+                    </div>
+                </div>
+                <div class="col-md-4 info" id="userInformation">
+                    <ul>
+                        <li>Wins</li>
+                        <li id="tWins">0</li>
+                        <li>Losses</li>
+                        <li id="tLosses">0</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 info" id="yourNum">
+                    <div>
+                        Your Number is:
+                    </div>
+                    <div id="yNum">
+                        7294
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <button><img class="ball" src="assets/images/1star.jpeg" alt="A 1 star dragonball" value="1"></button>
+                </div>
+                <div class="col-md-3">
+                    <button><img class="ball" src="assets/images/2star.jpeg" alt="A 2 star dragonball" value="2"></button>
+                </div>
+                <div class="col-md-3">
+                    <button><img class="ball" src="assets/images/3star.jpeg" alt="A 3 star dragonball" value="3"></button>
+                </div>
+                <div class="col-md-3">
+                    <button><img class="ball" src="assets/images/4star.jpeg" alt="A 4 star dragonball" value="4"></button>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script rel="javascript" type="text/javascript" src="assets/javascript/game.js"></script>
+    
+
+    </body>
+    <footer class="footer">
+        @Copyright Armando Ochoa 2018
+    </footer>
+</html>
