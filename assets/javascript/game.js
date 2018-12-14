@@ -12,6 +12,7 @@ function reset() {
     points = 0;
     tNum = Math.floor(Math.random() * 120) + 19;
     console.log(tNum);
+    $("#tNum").text(tNum);
     yNum = 0;
     console.log(yNum);
     ballOne = Math.floor(Math.random() * 12) + 1;  
@@ -30,6 +31,7 @@ function play() {
         console.log(ballOne + " is the amount of points you added");
         yNum = yNum + ballOne;
         console.log(yNum);
+        $("#yNum").text(yNum);
         console.log(yNum + " vs " + tNum);
         scoreCheck();
     });
@@ -37,6 +39,7 @@ function play() {
         console.log(ballTwo + " is the amount of points you added");
         yNum = yNum + ballTwo;
         console.log(yNum);
+        $("#yNum").text(yNum);
         console.log(yNum + " vs " + tNum);
         scoreCheck();
     });
@@ -44,6 +47,7 @@ function play() {
         console.log(ballThree + " is the amount of points you added");
         yNum = yNum + ballThree;
         console.log(yNum);
+        $("#yNum").text(yNum);
         console.log(yNum + " vs " + tNum);
         scoreCheck();
     });
@@ -51,6 +55,7 @@ function play() {
         console.log(ballFour + " is the amount of points you added");
         yNum = yNum + ballFour;
         console.log(yNum);
+        $("#yNum").text(yNum);
         console.log(yNum + " vs " + tNum);
         scoreCheck();
     });
@@ -63,12 +68,16 @@ function scoreCheck() {
     if ( yNum === tNum) {
        console.log("its a match");
        tWins++;
+       $("#tWins").text(tWins);
+       $("#yNum").text(yNum);
        alert("You Win Homie!");
        reset();
 
     } else if ( yNum > tNum ) {
         console.log("its a nay");
         tLosses++;
+        $("#tLosses").text(tLosses);
+        $("#yNum").text(yNum);
         alert("You Lose, How Sad.");
         reset();
     }
